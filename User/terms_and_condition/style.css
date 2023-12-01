@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+    background-image: linear-gradient(to right bottom ,#252b48,#6a79e5 );
+   background-size: cover;
+   background-position: center;
+    min-height: 100vh;
+}
+:root {
+ --c1:#252B48;
+ --c2: #ffc107;
+}
+.logo {
+
+height: 20vh;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+    .logo img{
+      
+      height: 130px;
+      width: auto;
+    }
+  
+.faq-heading{
+display: flex;
+align-items: center;
+justify-content: center;
+color: var(--c2);
+width: 100%;
+
+position: relative;
+height: 60px;
+}
+.faq-heading h1{
+ font-size:40px;  
+ color: #ffffff; 
+ margin-bottom: 25px;
+   
+}
+  
+.faq-container{
+display: flex;
+justify-content: center;
+flex-direction: column;
+padding: 0vh 35vh;
+line-height: 150%;
+word-spacing: 5px;
+}
+p{
+    color: #e0dfdf;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+li h3{
+    color:rgb(241, 239, 238);
+    display: inline;
+}
+h2{
+    color:rgb(241, 239, 238);
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+ol {
+    color: #ffc107;
+}
+ol li{
+    color: #e0dfdf;
+    line-height: 150%;
+    word-spacing: 5px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.hr-line{
+  width: 60%;
+  margin: auto;
+  
+}
+
+
+

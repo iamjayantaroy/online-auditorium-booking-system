@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+    background-image: linear-gradient(to right bottom ,#252b48,#6a79e5 );
+   background-size: cover;
+   background-position: center;
+    min-height: 100vh;
+}
+:root {
+ --c1:#252B48;
+ --c2: #ffc107;
+}
+.logo {
+
+height: 30vh;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+    .logo img{
+      
+      height: 130px;
+      width: auto;
+    }
+  
+.faq-heading{
+display: flex;
+align-items: center;
+justify-content: center;
+color: var(--c2);
+width: 100%;
+margin-top: 20px;
+position: relative;
+height: 60px;
+}
+.faq-heading h1{
+ font-size:40px;  
+ color: #ffffff; 
+   
+}
+  
+.faq-container{
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+.hr-line{
+  width: 60%;
+  margin: auto;
+  
+}
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
+    /* background-color: #eee; */
+    color: var(--c2);
+    cursor: pointer;
+    padding: 30px 20px;
+    width: 60%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+    box-sizing: border-box;
+}
+.faq-body{
+    margin: auto;
+    /* text-align: center; */
+   width: 50%; 
+   padding: auto;
+   
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+.faq-page:hover {
+background-color: var(--c1);
+}
+/* Style the faq-page panel. Note: hidden by default */
+.faq-body {
+    padding: 0 18px;
+    color: #e6e2e2;
+    display: none;
+    overflow: hidden;
+}
+.faq-page:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}

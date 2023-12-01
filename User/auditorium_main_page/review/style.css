@@ -1,0 +1,134 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+
+:root {
+	--yellow: #FFBD13;
+	--blue: #4383FF;
+	--blue-d-1: #3278FF;
+	--light: #F5F5F5;
+	--grey: #AAA;
+	--white: #FFF;
+
+}
+
+body {
+	background-image: linear-gradient(to right bottom ,#252b48,#6a79e5 );;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	gap: 100px;
+	min-height: 100vh;
+	padding: 1rem;
+}
+.logo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: #F5F5F5;
+	font-size: 2rem;
+}
+.logo img{
+	width: 300px;
+}
+.wrapper {
+	
+	padding: 60px;
+	text-align: center;
+	border-radius: .75rem;
+	box-shadow: -8px 8px 30px rgba(55, 54, 54, 0.8);
+	caret-color: auto;
+	background-color: rgba(59, 57, 57, 0.2);
+    z-index: 2;
+    backdrop-filter: blur(5px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.wrapper h3 {
+	font-size: 2rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+	color: #F5F5F5;
+}
+.rating {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-gap: .3rem;
+	font-size: 2rem;
+	color: var(--yellow);
+	margin-bottom: 1rem;
+}
+.rating .star {
+	cursor: pointer;
+}
+.rating .star.active {
+	opacity: 0;
+	animation: animate .5s calc(var(--i) * .1s) ease-in-out forwards;
+}
+
+
+@keyframes animate {
+	0% {
+		opacity: 0;
+		transform: scale(1);
+	}
+	50% {
+		opacity: 1;
+		transform: scale(1.2);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+
+textarea {
+	
+	padding: 25px;
+	height: 150px;
+	border-radius: 8px;
+	border: 1px solid white;
+	outline: none;
+	resize: none;
+	margin-bottom: 8px;
+	background: transparent;
+	color: white;
+	caret-color: #FFF;
+	font-size: 18px;
+	
+}
+::placeholder{
+	color: #F5F5F5;
+}
+
+.btn-group {
+	display: flex;
+	grid-gap: .5rem;
+	align-items: center;
+}
+.btn-group .btn {
+	padding: .75rem 1rem;
+	border-radius: .5rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-size: .875rem;
+	font-weight: 500;
+}
+.btn-group .btn.submit {
+	background: #ffc107;
+	color: #252b48;
+}
+
+.btn-group .btn.cancel {
+	background: #252b48;
+	color: #ffc107;
+}
